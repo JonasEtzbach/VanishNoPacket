@@ -106,7 +106,7 @@ public final class SpoutCraftHook extends Hook implements Listener {
             this.enabled = false;
             return;
         }
-        config.setDefaults(YamlConfiguration.loadConfiguration(stream));
+        config.setDefaults(config);
         try {
             config.save(confFile);
         } catch (final IOException e) {
